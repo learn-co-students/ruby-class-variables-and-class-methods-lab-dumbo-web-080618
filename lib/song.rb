@@ -18,10 +18,10 @@ class Song
       @@count
     end
      def self.artists
-      @@artists.uniq
+      @@artists.to_set#.uniq
     end
      def self.genres
-      @@genres.uniq
+      @@genres.to_set#.uniq
     end
      def self.genre_count
       @@genres.each do |genre|
